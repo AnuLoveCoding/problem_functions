@@ -7,12 +7,19 @@ public class pb1 {
 
  //    @Override
     //find the factorial of n;
-    public  static int factorial(int n) {
-        int fact = 1;
-        for (int i = 1; i <=n ; i++) {
-            fact*=i;
-        }
-        return fact;
+//    public  static int factorial(int n) {
+//        int fact = 1;
+//        for (int i = 1; i <=n ; i++) {
+//            fact*=i;
+//        }
+//        return fact;
+//    }
+
+    // create a function for find product;
+
+
+    public static int product(int n) {
+        return n*n ;
     }
 
     // Main methods ;
@@ -21,8 +28,10 @@ public class pb1 {
         System.out.println("Enter Your number ");
         int n  = scn.nextInt();
 
-        int ans =  factorial(n);
-        System.out.println("The Factorial of n : "+ans);
+        System.out.println("The product of "+product(n));
+
+//        int ans =  factorial(n);
+//        System.out.println("The Factorial of n : "+ans);
 
         /*
          ***** check-file-location *****;
