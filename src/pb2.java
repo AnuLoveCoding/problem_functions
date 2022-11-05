@@ -43,13 +43,12 @@ public class pb2 {
 
         return (int)Math.ceil(m);
     }
-
-
-
-
 //    Q.8 Given the temperature of a day in Degrees Celsius, convert this given temperature from Celsius to Fahrenheit.
 //    Write a program to do so. Round the output up to 2 decimal places
-
+      public static double fahrenheit(double n){
+          double val = ((9d/5d)*n)+32;
+          return (double) Math.round(val*100)/100d;
+      }
 
 //    Q.9 Given an integer A, find the rounded value of real number A / 200.
 
@@ -68,6 +67,8 @@ public class pb2 {
          double n = scn.nextDouble();
         System.out.println("Enter Your Number for 2 ");
         double m = scn.nextDouble();
+        System.out.println("Enter Your Tempreature");
+        double k = scn.nextDouble();
 //        Q.1 returning value;
 //        System.out.println(sum(9,17));
 
@@ -93,10 +94,12 @@ public class pb2 {
 //        System.out.println("Cube of number is "+cube(16,3));
 
 //        Q.6 returning Value;
-        System.out.println();
-        System.out.println(floor_Value(n));
+        System.out.println("floor value of "+n+" = "+floor_Value(n));
 
 //        Q.7 returning Value;
-        System.out.println(ceil_value(m));
+        System.out.println("ceil value of "+m+" = "+ceil_value(m));
+
+//        Q.8 celsuis to fahrenheit
+        System.out.println("Tempreature "+k+" = "+ fahrenheit(k)+"f");
     }
 }
