@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class pb2 {
@@ -30,12 +31,43 @@ public class pb2 {
 //         return product;
 //     }
 
+//    Q.6 Given an integer A, find the floor value of real number A / 200.
+      public static  int floor_Value(double n){
+//     (Floor Value means nearest of number);
+
+          return (int)Math.floor(n);
+    }
+//    Q.7 Given an integer A, find the ceil value of real number A / 200.
+    public static  int ceil_value(double m){
+//     (ceil Value means greater of number);
+
+        return (int)Math.ceil(m);
+    }
+
+
+
+
+//    Q.8 Given the temperature of a day in Degrees Celsius, convert this given temperature from Celsius to Fahrenheit.
+//    Write a program to do so. Round the output up to 2 decimal places
+
+
+//    Q.9 Given an integer A, find the rounded value of real number A / 200.
+
+/*    Q.10 Given three integers, A, B and C.
+    You have to find the number of days it will take to reach zero cases of Corona in a city.
+    A - Average cases recovered in a day of the corona.
+    B - Number of new cases of corona daily.
+    C - Current active cases of the corona.
+*/
+
+
+
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter Your Number for 1 ");
-        int n = scn.nextInt();
+         double n = scn.nextDouble();
         System.out.println("Enter Your Number for 2 ");
-        int m = scn.nextInt();
+        double m = scn.nextDouble();
 //        Q.1 returning value;
 //        System.out.println(sum(9,17));
 
@@ -54,10 +86,17 @@ public class pb2 {
 //        System.out.println(divisible(21,4));
 
 //        Q.5 returning Value;
-//        System.out.println("Cube of number is "+cube(n,m));
+//        System.out.println("Cube of number is "+cube+(n,m));
 //        System.out.println("Cube of number is "+cube(6,3));
 //        System.out.println("Cube of number is "+cube(5,2));
 //        System.out.println("Cube of number is "+cube(8,3));
 //        System.out.println("Cube of number is "+cube(16,3));
+
+//        Q.6 returning Value;
+        System.out.println();
+        System.out.println(floor_Value(n));
+
+//        Q.7 returning Value;
+        System.out.println(ceil_value(m));
     }
 }
