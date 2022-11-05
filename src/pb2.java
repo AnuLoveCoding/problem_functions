@@ -51,6 +51,16 @@ public class pb2 {
       }
 
 //    Q.9 Given an integer A, find the rounded value of real number A / 200.
+     public static int round_value(int A){
+         double temp = (double) A/200;
+         int ans = 1;
+         if(temp>0){
+             ans = (int) Math.round(temp);
+         }else{
+             ans = -1*(int)Math.floor(-temp);
+         }
+         return ans;
+     }
 
 /*    Q.10 Given three integers, A, B and C.
     You have to find the number of days it will take to reach zero cases of Corona in a city.
@@ -65,10 +75,17 @@ public class pb2 {
         Scanner scn = new Scanner(System.in);
         System.out.println("Enter Your Number for 1 ");
          double n = scn.nextDouble();
+
         System.out.println("Enter Your Number for 2 ");
         double m = scn.nextDouble();
+
         System.out.println("Enter Your Tempreature");
         double k = scn.nextDouble();
+
+        System.out.println("Enter Your Round Value");
+        int  A = scn.nextInt();
+
+
 //        Q.1 returning value;
 //        System.out.println(sum(9,17));
 
@@ -99,7 +116,10 @@ public class pb2 {
 //        Q.7 returning Value;
         System.out.println("ceil value of "+m+" = "+ceil_value(m));
 
-//        Q.8 celsuis to fahrenheit
+//        Q.8 celsuis to fahrenheit;
         System.out.println("Tempreature "+k+" = "+ fahrenheit(k)+"f");
+
+//        Q.9 find the round-Value of A;
+        System.out.println(round_value(A));
     }
 }
